@@ -31,5 +31,5 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           source: './dist/*'
-          target: /var/www/html/vue-app/
+          target: /var/www/html/
           strip_components: 1

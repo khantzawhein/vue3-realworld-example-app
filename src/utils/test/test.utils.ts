@@ -78,7 +78,6 @@ export function asyncWrapper(component: ReturnType<typeof defineComponent>, prop
         { id: 'root' },
         h(Suspense, null, {
           default() {
-            // eslint-disable-next-line ts/no-unsafe-argument
             return h(component, props)
           },
           fallback: h('div', 'Loading...'),

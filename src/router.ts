@@ -19,37 +19,37 @@ export type AppRouteNames =
 export const routes: RouteRecordRaw[] = [
   {
     name: 'global-feed',
-    path: '/vue-app/',
+    path: '/',
     component: Home,
   },
   {
     name: 'my-feed',
-    path: '/vue-app/my-feeds',
+    path: '/my-feeds',
     component: Home,
   },
   {
     name: 'tag',
-    path: '/vue-app/tag/:tag',
+    path: '/tag/:tag',
     component: Home,
   },
   {
     name: 'article',
-    path: '/vue-app/article/:slug',
+    path: '/article/:slug',
     component: () => import('./pages/Article.vue'),
   },
   {
     name: 'edit-article',
-    path: '/vue-app/article/:slug/edit',
+    path: '/article/:slug/edit',
     component: () => import('./pages/EditArticle.vue'),
   },
   {
     name: 'create-article',
-    path: '/vue-app/article/create',
+    path: '/article/create',
     component: () => import('./pages/EditArticle.vue'),
   },
   {
     name: 'login',
-    path: '/vue-app/login',
+    path: '/login',
     component: () => import('./pages/Login.vue'),
     beforeEnter: () => !isAuthorized(),
   },
